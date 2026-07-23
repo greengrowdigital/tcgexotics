@@ -1,0 +1,186 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   TCGEXOTICS — Design System v2
+   Register: brand / marketing (design IS the product)
+   Direction: editorial luxury — white canvas, near-black ink,
+   a single warm ember gradient as the only accent. Quiet,
+   prestigious, intuitive. Imagery carries the drama.
+   ============================================================ */
+
+@theme {
+  /* Surfaces */
+  --color-paper: #ffffff;
+  --color-cloud: #f5f3ef; /* warm off-white for alternating sections */
+  --color-ink: #141416; /* near-black text */
+  --color-graphite: #55535a; /* secondary text (~7:1 on white) */
+  --color-mist: #6f6d75; /* tertiary text — kept AA-legible (~5:1 on white) */
+  --color-line: #e7e4dd; /* hairline */
+  --color-line-strong: #d7d3ca;
+
+  /* Brand — the ember gradient (red-orange → flame → amber) */
+  --color-magenta: #ff3d2e;
+  --color-flame: #ff6a1a;
+  --color-amber: #ffa51f;
+  --color-on-accent: #1a1206; /* text placed on the gradient */
+
+  /* Fonts */
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bodoni Moda', Georgia, 'Times New Roman', serif;
+
+  /* Motion */
+  --animate-marquee: marquee 44s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    color: var(--color-ink);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-flame);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  @media (pointer: fine) {
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--color-cloud);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-line-strong);
+      border: 3px solid var(--color-cloud);
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-mist);
+    }
+  }
+
+  section {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@layer components {
+  .shell {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 78rem;
+    padding-inline: clamp(1.25rem, 5vw, 3.5rem);
+  }
+
+  /* The signature — the gauge conic gradient (the client's ring) */
+  .gauge-conic {
+    background: conic-gradient(
+      from 130deg,
+      var(--color-magenta),
+      var(--color-flame) 42%,
+      var(--color-amber) 72%,
+      var(--color-magenta)
+    );
+  }
+
+  /* Ember gradient — used for the primary CTA, thin accents, active states */
+  .ember {
+    background: linear-gradient(
+      98deg,
+      var(--color-magenta),
+      var(--color-flame) 52%,
+      var(--color-amber)
+    );
+  }
+
+  /* Small tracked label — replaces the old mono eyebrow, used sparingly */
+  .label {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-graphite);
+  }
+
+  /* Elegant serif italic accent for pull quotes / emphasis */
+  .serif-italic {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .shadow-card {
+    box-shadow:
+      0 1px 2px rgb(20 20 22 / 0.04),
+      0 18px 40px -22px rgb(20 20 22 / 0.22);
+  }
+  .shadow-float {
+    box-shadow:
+      0 2px 8px rgb(20 20 22 / 0.06),
+      0 30px 70px -30px rgb(20 20 22 / 0.3);
+  }
+}
+
+@layer utilities {
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
