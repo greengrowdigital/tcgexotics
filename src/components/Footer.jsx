@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Instagram, Mail, MapPin, Phone } from 'lucide-react'
-import GaugeMark from './GaugeMark.jsx'
+import Mark from './Mark.jsx'
 import { NAV, SITE, AREAS } from '../data/site.js'
 import { useReserve } from './Reserve.jsx'
 
@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr] lg:grid-cols-[1.7fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5 text-white">
-              <GaugeMark size={36} />
+              <Mark size={40} />
               <span className="text-xl font-bold tracking-[-0.01em]">
                 TCG<span className="text-xs font-semibold tracking-[0.3em] opacity-70">EXOTICS</span>
               </span>

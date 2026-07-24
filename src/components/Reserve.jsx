@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Check, Loader2, Phone, X } from 'lucide-react'
 import { FLEET } from '../data/fleet.js'
 import { SITE, AREAS, DURATIONS } from '../data/site.js'
-import GaugeMark from './GaugeMark.jsx'
+import Mark from './Mark.jsx'
 import { Field, Select, inputCls, today, useFakeSubmit } from './formKit.jsx'
 
 const ReserveContext = createContext(null)
@@ -142,7 +142,7 @@ function ReserveModal({ open, car, onClose }) {
           >
             <div className="flex items-center justify-between gap-4 border-b border-line px-6 py-4">
               <div className="flex items-center gap-2.5 text-ink">
-                <GaugeMark size={26} />
+                <Mark size={30} />
                 <h2 id="reserve-title" className="font-display text-lg font-medium">
                   {status === 'done' ? 'Request received' : 'Reserve your car'}
                 </h2>

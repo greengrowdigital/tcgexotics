@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import GaugeMark from './GaugeMark.jsx'
+import Mark from './Mark.jsx'
 
 // Brief first-load splash — dark screen, the gold gauge settling into place.
 // Short by design; never gates content for long, and honors reduced motion.
@@ -29,7 +29,7 @@ export default function Loader() {
               transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
               className="text-ink"
             >
-              <GaugeMark size={58} />
+              <Mark size={78} />
             </motion.div>
             <motion.span
               initial={{ opacity: 0, y: 6 }}
