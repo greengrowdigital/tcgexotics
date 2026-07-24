@@ -14,9 +14,11 @@ const sizes = {
 }
 
 const variants = {
-  primary: 'ember text-on-accent hover:-translate-y-0.5 hover:shadow-float',
-  secondary: 'bg-paper text-ink border border-line-strong hover:-translate-y-0.5 hover:bg-cloud',
-  outline: 'text-white border border-white/35 bg-white/5 backdrop-blur-md hover:bg-white/15',
+  primary:
+    'ember text-on-accent shadow-[0_4px_0_0_#7a5c18] hover:-translate-y-0.5 hover:shadow-[0_7px_0_0_#7a5c18] active:translate-y-0.5 active:shadow-[0_2px_0_0_#7a5c18]',
+  secondary:
+    'bg-paper text-ink border-2 border-line-strong shadow-[0_4px_0_0_#3a3a42] hover:-translate-y-0.5 hover:shadow-[0_7px_0_0_#3a3a42] active:translate-y-0.5 active:shadow-[0_2px_0_0_#3a3a42]',
+  outline: 'text-white border-2 border-white/45 bg-white/5 backdrop-blur-md hover:bg-white/15',
 }
 
 export default function Button({

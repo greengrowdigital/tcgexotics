@@ -26,7 +26,13 @@
 
   /* Fonts */
   --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Baloo 2', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bagel Fat One', 'Baloo 2', ui-sans-serif, system-ui, sans-serif;
+
+  /* Chunky, cartoon-rounded radii (global) */
+  --radius-lg: 1rem;
+  --radius-xl: 1.4rem;
+  --radius-2xl: 1.9rem;
+  --radius-3xl: 2.4rem;
 
   /* Motion */
   --animate-marquee: marquee 44s linear infinite;
@@ -155,15 +161,14 @@
     color: var(--color-flame);
   }
 
+  /* Cartoon "sticker" depth — flat 3D ledge shadows */
   .shadow-card {
-    box-shadow:
-      0 1px 2px rgb(20 20 22 / 0.04),
-      0 18px 40px -22px rgb(20 20 22 / 0.22);
+    box-shadow: 0 3px 0 0 var(--color-line-strong);
   }
   .shadow-float {
     box-shadow:
-      0 2px 8px rgb(20 20 22 / 0.06),
-      0 30px 70px -30px rgb(20 20 22 / 0.3);
+      0 5px 0 0 #7a5c18,
+      0 16px 30px -16px rgb(201 154 46 / 0.4);
   }
 }
 

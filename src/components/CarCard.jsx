@@ -10,7 +10,7 @@ export default function CarCard({ car }) {
   return (
     <motion.article
       variants={fadeUp}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-paper transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:shadow-card"
+      className="group flex flex-col overflow-hidden rounded-3xl border-2 border-line bg-paper shadow-card transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:shadow-float"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
