@@ -47,7 +47,7 @@ export default function Pricing() {
               <div className="flex items-baseline justify-between">
                 <h2 className="font-display text-2xl font-medium">{plan.name}</h2>
                 {plan.save && (
-                  <span className="text-[0.72rem] font-semibold uppercase tracking-[0.1em] text-emerald-600">
+                  <span className="text-[0.72rem] font-semibold uppercase tracking-[0.1em] text-flame">
                     {plan.save}
                   </span>
                 )}

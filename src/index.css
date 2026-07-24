@@ -18,11 +18,11 @@
   --color-line: #e7e4dd; /* hairline */
   --color-line-strong: #d7d3ca;
 
-  /* Brand — the ember gradient (red-orange → flame → amber) */
-  --color-magenta: #ff3d2e;
-  --color-flame: #ff6a1a;
-  --color-amber: #ffa51f;
-  --color-on-accent: #1a1206; /* text placed on the gradient */
+  /* Brand — the gold gradient (deep gold → gold → champagne) */
+  --color-magenta: #936910; /* deep gold (gradient start / conic) */
+  --color-flame: #ad8218; /* gold — accent text & icons */
+  --color-amber: #e6cd7d; /* pale champagne — gradient highlight */
+  --color-on-accent: #1f1604; /* dark text placed on the gold */
 
   /* Fonts */
   --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;

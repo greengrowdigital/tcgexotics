@@ -26,8 +26,8 @@ export default function Footer() {
             </p>
             <div className="mt-6 inline-flex items-center gap-2.5 rounded-full border border-white/15 px-3.5 py-2">
               <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-amber" />
               </span>
               <span className="text-[0.72rem] font-medium uppercase tracking-[0.16em] text-white/70">
                 Booking now · keys today
