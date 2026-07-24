@@ -10,7 +10,7 @@ export default function Footer() {
   const year = 2026
 
   return (
-    <footer className="relative mt-24 bg-ink pb-[calc(7rem+env(safe-area-inset-bottom))] pt-20 text-white md:pb-16">
+    <footer className="relative mt-24 border-t border-line bg-cloud pb-[calc(7rem+env(safe-area-inset-bottom))] pt-20 text-white md:pb-16">
       <div className="shell">
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr] lg:grid-cols-[1.7fr_1fr_1fr_1fr]">
           <div>

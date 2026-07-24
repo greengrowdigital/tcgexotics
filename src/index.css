@@ -9,20 +9,20 @@
    ============================================================ */
 
 @theme {
-  /* Surfaces */
-  --color-paper: #ffffff;
-  --color-cloud: #f5f3ef; /* warm off-white for alternating sections */
-  --color-ink: #141416; /* near-black text */
-  --color-graphite: #55535a; /* secondary text (~7:1 on white) */
-  --color-mist: #6f6d75; /* tertiary text — kept AA-legible (~5:1 on white) */
-  --color-line: #e7e4dd; /* hairline */
-  --color-line-strong: #d7d3ca;
+  /* Surfaces — black canvas, faintly warm */
+  --color-paper: #0f0f12; /* base page + cards + nav + modal */
+  --color-cloud: #17171c; /* elevated: alt sections, inputs, footer */
+  --color-ink: #f3f2ee; /* primary text (warm near-white) */
+  --color-graphite: #a6a4ad; /* secondary text (~7:1 on black) */
+  --color-mist: #85838c; /* tertiary text — kept AA-legible on black */
+  --color-line: #29292f; /* hairline */
+  --color-line-strong: #3a3a42;
 
   /* Brand — the gold gradient (deep gold → gold → champagne) */
-  --color-magenta: #936910; /* deep gold (gradient start / conic) */
-  --color-flame: #ad8218; /* gold — accent text & icons */
-  --color-amber: #e6cd7d; /* pale champagne — gradient highlight */
-  --color-on-accent: #1f1604; /* dark text placed on the gold */
+  --color-magenta: #a4771a; /* deep gold (gradient start / conic) */
+  --color-flame: #c99a2e; /* gold — accent text & icons */
+  --color-amber: #ecd68f; /* pale champagne — gradient highlight */
+  --color-on-accent: #201704; /* dark text placed on the gold */
 
   /* Fonts */
   --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;

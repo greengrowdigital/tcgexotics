@@ -143,7 +143,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="absolute inset-0 bg-ink/40 backdrop-blur-sm" onClick={closeMenu} />
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={closeMenu} />
             <motion.div
               ref={drawerRef}
               role="dialog"

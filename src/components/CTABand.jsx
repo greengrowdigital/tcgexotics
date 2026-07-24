@@ -24,7 +24,7 @@ export default function CTABand({
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-ink/90 via-ink/70 to-ink/35" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/92 via-black/75 to-black/45" />
         <div className="relative flex flex-col items-start gap-6 px-6 py-16 text-white sm:px-14 sm:py-24">
           <h2 className="max-w-2xl text-balance font-display text-[clamp(2rem,5vw,3.5rem)] font-medium leading-[1.05] text-white">
             {title}

@@ -16,9 +16,9 @@ export default function GaugeMark({ size = 32, className = '' }) {
     >
       <defs>
         <linearGradient id={gid} x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#936910" />
-          <stop offset="0.55" stopColor="#AD8218" />
-          <stop offset="1" stopColor="#E6CD7D" />
+          <stop stopColor="#A4771A" />
+          <stop offset="0.55" stopColor="#C99A2E" />
+          <stop offset="1" stopColor="#ECD68F" />
         </linearGradient>
       </defs>
       <circle

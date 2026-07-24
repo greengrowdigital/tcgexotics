@@ -48,8 +48,8 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent" />
 
         <div className="shell relative z-10 pb-28 pt-36 sm:pb-24">
           <motion.div variants={stagger(0.1, 0.09)} initial="hidden" animate="show" className="max-w-3xl">
@@ -175,7 +175,7 @@ export default function Home() {
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-6 text-white">
                   <div>
                     <h3 className="font-display text-2xl font-medium text-white">{tile.tag}</h3>

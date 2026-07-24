@@ -127,7 +127,7 @@ function ReserveModal({ open, car, onClose }) {
             aria-label="Close reservation"
             tabIndex={-1}
             onClick={onClose}
-            className="absolute inset-0 bg-ink/50 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
           />
           <motion.div
             ref={panelRef}

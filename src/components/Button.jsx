@@ -16,7 +16,7 @@ const sizes = {
 const variants = {
   primary: 'ember text-on-accent hover:-translate-y-0.5 hover:shadow-float',
   secondary: 'bg-paper text-ink border border-line-strong hover:-translate-y-0.5 hover:bg-cloud',
-  outline: 'text-paper border border-white/35 bg-white/5 backdrop-blur-md hover:bg-white/15',
+  outline: 'text-white border border-white/35 bg-white/5 backdrop-blur-md hover:bg-white/15',
 }
 
 export default function Button({
